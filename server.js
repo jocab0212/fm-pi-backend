@@ -38,3 +38,9 @@ app.get("/api/music", (req, res) => {
 app.listen(3000, () => {
   console.log("FM.Pi backend running on port 3000");
 });
+
+app.post("/signup", (req, res) => {
+  const { user, email } = req.body;
+  console.log("New signup:", user, email);
+  res.json({ message: "Signup successful!", user, email });
+});

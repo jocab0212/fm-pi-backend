@@ -14,6 +14,10 @@ app.post("/signup", (req, res) => {
   res.json({ status: "ok", message: "Signup received" });
 });
 
+app.get("/api/hello", (req, res) => {
+  res.json({ message: "Hello from FM.Pi backend!" });
+});
+
 app.listen(3000, () => {
   console.log("FM.Pi backend running on port 3000");
 });

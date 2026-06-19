@@ -18,6 +18,13 @@ app.get("/api/hello", (req, res) => {
   res.json({ message: "Hello from FM.Pi backend!" });
 });
 
+app.get("/", (req, res) => {
+  res.send("Welcome to FM.Pi Backend 🎶");
+});
+app.get("/", (req, res) => {
+  res.send("Welcome to FM.Pi Backend 🎶");
+});
+
 app.listen(3000, () => {
   console.log("FM.Pi backend running on port 3000");
 });
